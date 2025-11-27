@@ -5,67 +5,121 @@
 }
 
 :root{
-    --heading-background-color: steelblue;
+    --background-color: #287DB2;
+    --heading-color: #504040;
     --color: white;
 }
 
-nav{
-    background-color: steelblue;
-    padding: 20px;
+a {
+    color: #00f;
 }
-nav a{
-    color: white;
-    padding: 10px;
+
+header, .grid, footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: var(--background-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
     display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color);
+}
+
+main {
+    max-width: 100%;
+    grid-column: 2/3;
+    margin: 1rem 0;
 }
 
 h1{
-    color: slategrey;
+    color: var(--heading-color);
+    /* color: #77686A; */
+    border-bottom: 1px solid #222;
 }
 
 main img{
-    width: 150px;
+    width: 12rem;
     height: auto;
     border: 1px solid gray;
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 0 0 1rem;
+    margin: 1rem 0 1rem 1rem;
 }
 
-main{
-    max-width: 840px;
+p {
+    padding: 1rem;
 }
 
-p{padding: 0;}
+ul {
+    list-style: none;
+    padding: 1rem;
+}
 
-aside{
-    width: 20rem;
+footer {
+    background-color: var(--background-color);
+    color: var(--color);
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+}
+
+aside {
+    max-width: 30rem;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-aside img{
-    width: 200px;
-    height: auto;
-}
 aside h2 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 3rem;
-    color: white;
+    top: 2rem;
+    color: var(--heading-color);
+    font-size: 35px;
+    text-shadow: 5px 2px 5px white;
 }
+
+aside img{
+    width: 350px;
+    height: auto;
+}
+
+aside p {
+    color: #000;
+}
+
 footer{
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
 }
+
 /* Class Selectors */
 .box {
-    border: 1px rgb(0 0 0 / 0.2);
+    border: 1px solid slategray;
     padding: 1rem;
-    background-color: #eee;
+    background-color: #cccaca;
     color: #333;
-    margin: 1rem;
+    /* margin: 1rem; */
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
