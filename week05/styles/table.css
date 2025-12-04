@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140, 140, 140);
+    letter-spacing: 1px
+}
+
+th, td {
+    border: 1px solid rgb(150, 150, 150);
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.cata, .acre {
+    background-color: #EDEEF2;
+}
+
+thead th, tfoot tr {
+    background-color: rgb(0 0 0);
+    color: white;
+    font-weight: 700;
+}
+
+caption {
+    font-size: xx-large;
+    border: 1px solid #969696;
+    padding: 1rem;
+    background-color: bisque;
+    font-weight: 700;
+}
+/* #EDEEF2 */
