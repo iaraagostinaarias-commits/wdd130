@@ -13,10 +13,6 @@
     box-sizing: border-box;
 }
 
-img {
-    box-shadow: 1px 5px 5px gray;
-}
-
 body {
     font-family: var(--body-font);
     color: var(--secondary-color);
