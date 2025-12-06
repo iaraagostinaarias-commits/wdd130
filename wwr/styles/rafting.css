@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+img {
+    box-shadow: 1px 5px 5px gray;
+}
+
 body {
     font-family: var(--body-font);
     color: var(--secondary-color);
@@ -21,6 +25,10 @@ body {
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+}
+
+footer {
+    color: var(--accent2-color);
 }
 
 nav, p, article {
@@ -48,7 +56,6 @@ ul {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    border: 2.5px solid var(--secondary-color);
     padding: 1px;
 }
 
@@ -118,6 +125,7 @@ h2 {
     align-items: center;
     margin: 1rem 0;
     padding: 8px;
+    border: 1px solid #000;
 }
 
 .history-content {
@@ -139,6 +147,7 @@ h2 {
     flex-direction: column;
     margin: 1rem 0;
     padding: 8px;
+    border: 1px solid #000;
 }
 
 .adventure-content {
@@ -148,6 +157,10 @@ h2 {
     flex-direction: row;
 }
 
+.adventure img {
+    display: block;
+}
+
 figure figcaption {
     background-color: var(--accent2-color);
     font-family: var(--body-font);
@@ -155,7 +168,7 @@ figure figcaption {
     text-align: center;
     font-size: 1rem;
     font-weight: 700;
-    padding: 5px;
+    padding: .5rem;
 }
 
 .icons {
@@ -178,24 +191,27 @@ span {
 }
 
 
-
-.mapform {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+.staff {
+    text-align: center;
+    width: 100%;
 }
 
-iframe {
-    border-style: none;
-    margin: 0;
+.staff img {
+    display: block;
+    margin: 0 auto;
+}
+
+.main-color {
+    background-color: var(--accent2-color);
 }
 
 .contact {
-    /* background-color: var(--accent2-color); */
+    background-color: #2e4d26aa;
     color: var(--secondary-color);
     text-align: center;
-    padding: .5rem 0;
+    padding: 2rem;
+    box-shadow: .5px .5px 5px var(--primary-color);
+    border: 1px solid #000;
 }
 
 .contact h1 {
@@ -212,24 +228,37 @@ address p {
     padding: 0;
 }
 
-.form {
+.mapform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+iframe {
+    border: 1px solid #000;
+    margin: 0;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.form-margin {
     margin-left: 440px;
     margin: 0;
 }
 
 form {
-    /* border: 1px solid #d3d3d3;
-    background-color: #EEEEEE; */
     width: 400px;
     display: grid;
 }
 
 fieldset {
-    /* border: 1px solid #d3d3d3; */
+    border: 1px solid #d3d3d3;
+    border-radius: .2rem;
     grid-gap: .5em;
-    padding: .2rem;
+    padding: .5rem;
     margin: .5rem;
     display: grid;
+    box-shadow: 1px 1px 3px #000;
 }
 
 label {
@@ -248,37 +277,21 @@ input[type="checkbox"] {
     vertical-align: bottom;
 }
 
-.form-item {
+.column1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.column1 {
-    grid-template-columns: 3fr 1fr;
-}
-
-.message {
-    text-align: center;
-}
-
-
-.part2 {
-    display: grid;
-    grid-template-columns: 2fr 5fr;
-}
-
-.column2 {
+.radio-flex {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
 }
 
-.column3 {
+.column2, .column3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: .3rem;
+    gap: .5rem;
 }
 
 .column4{
@@ -289,14 +302,14 @@ input[type="checkbox"] {
 }
 
 button {
-    background-color: navy;
-    color: var(--accent2-color);
     margin: 0 .5rem .5rem .5rem;
-    border: none;
+    color: var(--accent2-color);
+    background-color: var(--primary-color);   /* navy */
     border-radius: .5rem;
-    padding: .5rem;
     font-size: 1.2rem;
     cursor: pointer;
+    padding: .5rem;
+    border: none;
 }
 
 button:hover {

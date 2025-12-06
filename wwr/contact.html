@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - White Water Rafting</title>
-    <meta name="description"
-        content="About the White Water Rafting company contact. Contact information, location, and our employees.">
+    <meta name="description" content="About the White Water Rafting company.">
     <meta name="author" content="Iara Agostina Arias">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -29,7 +28,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-color">
         <div class="contact">
             <h1>White Water Rafting Company</h1>
 
@@ -41,7 +40,6 @@
             </address>
         </div>
 
-
         <div class="mapform">
             <div>
                 <iframe
@@ -50,46 +48,40 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div class="form">
+            <div class="form-margin">
                 <form action="#">
                     <fieldset>
-                        <div class="form-item column1">
+
+                        <div class="column1">
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" placeholder="María Rodriguez" required>
                         </div>
 
-                        <div class="form-item column1">
+                        <div class="column1">
                             <label for="useremail">Email:</label>
                             <input type="email" id="useremail" name="useremail" placeholder="maria.rodriguez@gmail.com"
                                 required>
                         </div>
                     </fieldset>
 
-                    <fieldset>
-                        <p class="message">Message Purpose</p>
-                        <div class="form-item column2">
-                            <label for="general">General Inquiry</label>
-                            <input type="radio" id="general" name="purpose">
+                    <fieldset class="radio-flex">
+                        <p> Message Purpose</p>
+                        <div class="column2">
+                            <label><input type="radio" name="purpose"> General Inquiry</label>
+                            <label><input type="radio" name="purpose"> Reservation Question</label>
+                            <label><input type="radio" name="purpose"> Website Suggestion</label>
                         </div>
 
-                        <div class="form-item column2">
-                            <label for="reservation">Reservation Question</label>
-                            <input type="radio" id="reservation" name="purpose">
-                        </div>
-
-                        <div class="form-item column2">
-                            <label for="suggest">Website Suggestion</label>
-                            <input type="radio" id="suggest" name="purpose">
-                        </div>
                     </fieldset>
 
                     <fieldset>
-                        <div class="form-item column3">
+
+                        <div class="column3">
                             <label for="message">Message</label>
                             <textarea name="message" id="message" placeholder="Type Here"></textarea>
                         </div>
 
-                        <div class="form-item column4">
+                        <div class="column4">
                             <label for="subscribe">Please Subscribe me to the monthyly newsletter</label>
                             <input type="checkbox" id="subscribe" name="subscribe">
                         </div>
@@ -104,19 +96,19 @@
             <h2>We Are Here to Serve You</h2>
 
             <div class="adventure-content">
-                <figure>
+                <figure class="staff">
                     <img src="images/employee1.jpg" alt="" width="180" height="180">
-                    <figcaption>Employee Profile 1</figcaption>
+                    <figcaption> Rafting Guide</figcaption>
                 </figure>
 
-                <figure>
+                <figure class="staff">
                     <img src="images/employee2.jpg" alt="" width="180" height="180">
-                    <figcaption>Employee Profile 2</figcaption>
+                    <figcaption>Whitewater Rescue Technician</figcaption>
                 </figure>
 
-                <figure>
+                <figure class="staff">
                     <img src="images/employee3.jpg" alt="" width="180" height="180">
-                    <figcaption>Employee Profile 3</figcaption>
+                    <figcaption>Security Coordinator</figcaption>
                 </figure>
             </div>
         </section>
@@ -126,9 +118,9 @@
         <p>&copy; 2025 &#10070; White Water Rafting &#10070; Iara Arias &#10070;</p>
         <nav class="socialmedia">
             <a href="https://linkedin.com" target="_blank">
-                <img src="images/linkedin-icon.png" alt="LinkedIn Icon" width="40" height="40"><span>LinkedIn</span></a>
+                <img src="images/linkedin.png" alt="LinkedIn Icon" width="40" height="40"><span>LinkedIn</span></a>
             <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook-icon.png" alt="Facebook Icon" width="40" height="40"><span>Facebook</span></a>
+                <img src="images/facebook.png" alt="Facebook Icon" width="40" height="40"><span>Facebook</span></a>
             <a href="https://instagram.com" target="_blank">
                 <img src="images/instagram-icon.png" alt="Instagram Icon" width="40"
                     height="40"><span>Instagram</span></a>
