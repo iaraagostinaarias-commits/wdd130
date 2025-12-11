@@ -1,7 +1,7 @@
 :root{
 --primary-color: #2e4d26ef;
 --secondary-color: #000;
---accent1-color: #f2c75be7;
+--accent1-color: #DAC3A4; /* #DAC3A4  #f2c75be7 something close to beige, pretty beautiful*/
 --accent2-color: #FFEFD5;
 --heading-font: "Times New Roman", "Georgia", serif;
 --body-font: Arial, Helvetica, sans-serif;
@@ -19,7 +19,7 @@ body {
 }
 
 header, main, footer {
-    width: 840px;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -36,37 +36,37 @@ header {
     background-color: var(--primary-color);
     padding: 1rem 5rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
 }
 
+header img {
+    border-radius: 2rem;
+}
+
 ul {
-    background-color: var(--accent2-color);
-    font-size: large;
     display: flex;
     flex-direction: row;
-    text-decoration: none;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    padding: 1px;
 }
 
 li {
     list-style: none;
-    border-right: 2.5px solid var(--secondary-color);
-}
-
-li:last-child {
-    border-right: none;
 }
 
 a {
     padding: 1.5rem;
+    font-size: 23px;
+    text-decoration: none;
+    color: var(--accent2-color);
+    font-family: 'Times New Roman', Times, serif;
 }
+
+
+/* About Us Page */
 
 .hero {
     position: relative;
@@ -177,7 +177,6 @@ figure figcaption {
 }
 
 .socialmedia a {
-    text-decoration: none;
     margin: 0;
     padding: 0;
 }
@@ -186,6 +185,8 @@ span {
     display: none;
 }
 
+
+/* Contact Us */
 
 .staff {
     text-align: center;
@@ -242,7 +243,7 @@ iframe {
     margin: 0;
 }
 
-form {
+.contact-form {
     width: 400px;
     display: grid;
 }
@@ -255,11 +256,6 @@ fieldset {
     margin: .5rem;
     display: grid;
     box-shadow: 1px 1px 3px #000;
-}
-
-fieldset[class="radio"]{
-    border: none;
-    box-shadow: none;
 }
 
 label {
@@ -322,4 +318,167 @@ button {
 
 button:hover {
     background-color: darkgreen;
+}
+
+
+/* Home Page */
+
+.hero nav {
+    position: absolute;
+    opacity: .9;
+    bottom: 17rem;
+    margin-left: 22rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 2px solid #d3d3d3;
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+}
+
+.hero a {
+    font-weight: 700;
+    color: rgb(0, 90, 164);
+}
+
+.form-content {
+    width: 350px;
+    position: relative;
+    top: 25%;
+    left: 37%;
+    font-size: larger;
+    color: var(--secondary-color);
+}
+
+.form-text {
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+}
+
+.index-layout {
+    position: relative;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 70%;
+    color: var(--accent2-color);
+    background-color: var(--accent2-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.index-layout p {
+    left: 40%;
+    opacity: .9;
+    top: 3%;
+    padding: 2rem;
+    text-align: left;
+    font-size: larger;
+    position: absolute;
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+}
+
+.lay-pic1, .lay-pic2 {
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.index-form {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    font-size: larger;
+}
+
+
+/* Trips Page */
+
+.title-link {
+    position: relative;
+    width: 100%;
+    padding: 2rem 0 4rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    background-color: var(--accent2-color);
+}
+
+.title-link h1 {
+    position: relative;
+}
+
+.title-link nav {
+    position: absolute;
+    top: 5.5rem;
+    margin-left: 17rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 2px solid #d3d3d3;
+    color: var(--secondary-color);
+    background-color: var(--accent1-color);
+}
+
+.title-link a {
+    font-weight: 700;
+    color: rgb(0, 90, 164);
+}
+
+.trips-advent {
+    margin: 1.5rem 0;
+    background-color: #d3d3d392;
+}
+
+.trips-advent h2 {
+    color: var(--primary-color);
+    padding: 2rem 0 1rem 0;
+}
+
+.trips-advent-content {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 35% 30% 35%;
+}
+
+.pic1, .pic2, .pic3 {
+    padding: .5rem;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    background-color: var(--accent1-color);
+}
+
+table {
+    width: 100%;
+    margin: 1rem 0;
+    font-size: larger;
+    letter-spacing: 1px;
+    border-collapse: collapse;
+    background-color: var(--accent1-color);
+    border: 1px solid var(--secondary-color);
+}
+
+thead, th {
+    padding: 15px;
+    font-size: larger;
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
+}
+
+.row2 {
+    font-size: 1.25rem;
+    background-color: var(--accent2-color);
+}
+
+td {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 700;
+    border: 1px solid var(--secondary-color);
 }
