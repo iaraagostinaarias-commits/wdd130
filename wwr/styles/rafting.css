@@ -326,9 +326,9 @@ button:hover {
 .hero nav {
     position: absolute;
     opacity: .9;
-    bottom: 17rem;
-    margin-left: 22rem;
-    padding: 1rem;
+    bottom: 15rem;
+    margin-left: 23rem;
+    padding: 2px;
     border-radius: .5rem;
     border: 2px solid #d3d3d3;
     color: var(--secondary-color);
@@ -414,8 +414,8 @@ button:hover {
 .title-link nav {
     position: absolute;
     top: 5.5rem;
-    margin-left: 17rem;
-    padding: 1rem;
+    margin-left: 18rem;
+    padding: 2px;
     border-radius: .5rem;
     border: 2px solid #d3d3d3;
     color: var(--secondary-color);
